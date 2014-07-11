@@ -173,8 +173,9 @@ module.exports = function (grunt) {
           sourceMapURL: '<%= pkg.name %>-theme.css.map',
           sourceMapFilename: 'dist/css/<%= pkg.name %>-theme.css.map'
         },
-        src: 'less/theme.less',
-        dest: 'dist/css/<%= pkg.name %>-theme.css'
+        files: {
+          'dist/css/<%= pkg.name %>-theme.css': 'less/snooboots/theme.less'
+        }
       }
     },
 
